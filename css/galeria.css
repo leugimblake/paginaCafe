@@ -1,0 +1,71 @@
+.galery__img{
+/* acomodar imagenes*/
+    object-fit: cover;es
+    /* espacio entre las imagan*/
+    margin-bottom: 10px;
+    /* cuando se le da el clicñ*/
+    cursor:pointer;
+    /* hacer la animacion*/
+    transition: all 0.5s;
+}
+
+.galery__img:hover  {
+    transform: scale(1.02);
+}
+
+.galery__big{
+    height: 400px;
+}
+
+.galery__small{
+    height: 200px;
+}
+
+.modal{
+    
+    width: 100%;
+    /* altura minima*/
+    min-height: 100vh;
+    background: rgba(0,0,0,0.9);
+    /*va a salir de su posicion y va a estar pegado aunque se haga un scroll*/
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1000000;
+    display: none;
+
+}
+.modal__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* para poder alinear*/
+    height: 100vh;
+}
+
+.modal__img{
+    /* establecer el tamaño de la imagen en correspondencia de la pantalla*/
+    width: 50%;
+}
+
+.modal__boton{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #E68F64;
+    font-size: 2em;
+    text-align: center;
+    border-radius: 50%;
+    font-family: monospace;
+}
+
+.modal--open{
+    /* para que se muestre el modal*/
+    display: block;
+}
