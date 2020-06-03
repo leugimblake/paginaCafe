@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería | Huitzi Café</title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+     <link rel="stylesheet" href="css/galeria.css">
+    <link href="https://file.myfontastic.com/xx4JapV5bAFC86jNMWMdaK/icons.css" rel="stylesheet">
+</head>
+<body>
+   <!--.modal#modal>.modal__content-->
+   <div class="modal" id="modal">
+       <div class="modal__content"> 
+           <!--img.modal__img#modal__img-->
+           <img src="" alt="" class="modal__img" id="modal__img">
+       </div>
+       <!--.modal__boton#modal__boton-->
+       <div class="modal__boton" id="modal__boton">X</div>
+   </div>
+   
+   
+    <!-- header.main-header>.container-->
+    <header class="main-header">
+        <div class="container container--flex">
+            <!--.logo-container>h1.logo
+            -->
+            <div class="logo-container column column--50"><img src="img/logo.jpg" alt=""></div>
+            <!--.main-header__contactInfo>.main-header__contactInfo__phone
+            -->
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <!--span.icon-phone-->
+                    <span class="icon-phone">55 88-46-92-52</span>
+                </p>
+                <!--.main-header__contactInfo__address-->
+                <p class="main-header__contactInfo__address">
+                     <span class="icon-location">Vicente Guerrero 31 Centro 56100 Ejido del Centro, Méx.México</span>
+                </p>
+            </div>   
+        </div>
+    </header>
+    
+    <!--nav.main-nav>.container    -->
+    <nav class="main-nav">
+        <div class="container container--flex">
+                <!--span.icon-menu-->
+                <span class="icon-menu" id="btnmenu"></span>
+                <!--ul.menu#menu>li.menu__item*4>a.menu__link-->
+                
+                <ul class="menu" id="menu">
+                    <li class="menu__item"><a href="index.html" class="menu__link ">Inicio</a></li>
+                    <li class="menu__item"><a href="nosotros.html" class="menu__link ">Nosotros</a></li>
+                    <li class="menu__item"><a href="galeria.html" class="menu__link menu__link--select" >Galería</a></li>
+                    <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
+                </ul>
+            <!--.social-icon>a.social-icon__link*3>span.icon--->
+                <div class="social-icon">
+                    <a href="" class="social-icon__link"><span class="icon-facebook"></span></a>
+                    <a href="" class="social-icon__link"><span class="icon-twitter"></span></a>
+                    <a href="" class="social-icon__link"><span class="icon-mail"></span></a>
+                </div>
+        </div>
+    </nav>
+    <!--section.banner>img.banner__img+.banner__content-->
+    <section class="banner">
+        <img src="img/galeria/banner_galeria.jpg" alt="" class="banner__img">
+        <div class="banner__content">Galería</div>
+    </section>
+   
+       <main class="main">
+           <div class="group galery">
+               <!--h2.grou__title-->
+               <h2 class="group__title">Nuestra Galería</h2>
+               <!--.container.container--flex>.column.column--50-25*4-->
+               <div class="container container--flex">
+                   <div class="column column--50-25">
+                    <!--img*2--> 
+                    <img src="img/galeria/g1.jpg" alt="" class="galery__img galery__big">
+                    <img src="img/galeria/g2.jpeg" alt="" class="galery__img galery__small">
+                   </div>
+                   
+                   <div class="column column--50-25">
+                       <img src="img/galeria/g3.jpeg" alt="" class="galery__img galery__small">
+                       <img src="img/galeria/g4.jpeg" alt="" class="galery__img galery__big">
+                       
+                   </div>
+                   
+                   <div class="column column--50-25">
+                       <img src="img/galeria/g5.jpeg" alt="" class="galery__img galery__big">
+                       <img src="img/galeria/g6.jpeg" alt="" class="galery__img galery__small">
+                       
+                   </div>
+                   <div class="column column--50-25">
+                       
+                       <img src="img/galeria/g7.jpeg" alt="" class="galery__img galery__small">
+                       <img src="img/galeria/g8.jpeg" alt="" class="galery__img galery__big">
+                   </div>
+               </div>
+           </div>
+           
+       </main>
+        
+           
+           <footer class="main-footer">
+            <div class="container container--flex">
+                <!--.column.column-33*3-->
+                <div class="column column--33">
+                    <h2 class="column__title">¿Por qué somos tu mejor opción?</h2>
+                    <p class="column__txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam culpa porro est sed qui</p>  
+                </div>
+                <div class="column column--33">
+                   <h2 class="column__title">Contáctanos</h2>
+                   <p class="column__txt">Ejido del Centro, Méx.</p>
+                   <p class="column__txt">Vicente Guerrero Centro</p>
+                   <p class="column__txt">56100</p>
+                </div>
+                <div class="column column--33">
+                    <h2 class="column__title">Síguenos en nuestras redes sociales</h2>
+                    <p class="column__txt"><a href="" class="icon-facebook">Facebook</a></p>
+                    <p class="column__txt"><a href="" class="icon-twitter">Twitter</a></p>
+                    <p class="column__txt"><a href="" class="icon-youtube">Visíta nuestro canal</a></p>
+                </div>
+            </div>
+            <p class="copy">2018 Huitzi Café | Todos los derechos reservados</p>
+        </footer>
+        <script src="js/menu.js"></script>
+        <script src="js/modal.js"></script>
+
+</body>
+</html>
